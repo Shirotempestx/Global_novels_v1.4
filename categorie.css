@@ -1,0 +1,82 @@
+body {
+    padding-top: 70px;
+}
+
+.card {
+    height: 200px;
+}
+
+.fixbellow {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    margin-bottom: 10px;
+}
+
+.transition {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.transition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7 !important;
+    border-color: #0b5ed7 !important;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-card .btn {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.category-card .btn:hover {
+    background-color: #ff7e5f;
+    border-color: #ff7e5f;
+}
+
+.category-card .card-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.category-card .card-text {
+    color: #555;
+    font-size: 1rem;
+}

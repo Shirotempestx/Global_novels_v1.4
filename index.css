@@ -1,0 +1,147 @@
+body {
+    padding-top: 70px;
+
+}
+
+.explore-btn {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    height: 60px;
+    width: 200px;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.explore-btn .btn-text {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+}
+
+.explore-btn .fa-search {
+    font-size: 1.2rem;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.explore-btn:hover .btn-text {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.explore-btn:hover .fa-search {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.heith-img {
+    height: 400px;
+}
+
+.novel-card {
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.novel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.novel-card img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+}
+
+.transition {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.transition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7 !important;
+    border-color: #0b5ed7 !important;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-carousel {
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+    cursor: pointer;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
